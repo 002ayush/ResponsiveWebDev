@@ -1,0 +1,266 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;400&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+.navbar{
+    
+    display: flex;
+    height: 54px;
+    position: sticky;
+    top: 0;
+    cursor: pointer;
+   
+    
+}
+.nav-list{
+    
+    width: 72%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+   
+    
+}
+.nav-list li{
+    font-size: 20px;
+    font-family: 'Poppins', sans-serif ;
+    list-style: none;
+
+}
+.nav-list li a{
+    text-decoration: none;
+    color: white;
+
+
+}
+.box-main{
+    flex-direction: column-reverse;
+    width: 100%;
+}
+.nav-list li a:hover{
+    color: gray;
+}
+.rightNav{
+    display: flex;    
+    width: 28%;
+    
+    justify-content: flex-end;
+    align-items: center;
+    
+}
+
+#search{
+    
+    padding: 5px;
+    font-size: 17px;
+    border: 2px solid gray;
+    border-radius: 9px;
+    margin: 6px;
+    background: none;
+    color:white;
+}
+.btn{
+    
+    border: 2px solid gray;
+    height: 31px;
+    font-size: 19px;
+    border-radius: 6px;
+    vertical-align: middle;
+    background: none;
+    cursor: pointer;
+    color: white;
+}
+.background{
+    background: rgba(0,0,0,0.7) url('../img/bg.avif');
+    background-size: cover;
+    background-blend-mode: darken;
+}
+.box-main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(253, 248, 248);
+    text-decoration: none;
+    text-underline-offset: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    max-width: 50%;
+    padding: 66px;
+    margin: auto;
+}
+.firstSection{
+    height: 80vh;
+}
+.firstHalf{
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.secondHalf{
+    width: 30%;
+}
+.secondHalf img{
+    width: 122px;
+    height: 99px;
+    border: 2px solid black;
+    border-radius: 50%;
+    display: block;
+    margin: auto;
+}
+.text-big{
+    font-size: 30px;
+    font-family: 'Poppins', sans-serif;
+}
+.text-sm{
+    font-size: 12px;
+    font-family: 'Poppins', sans-serif;
+}   
+.button{
+    padding: 8px 10px;
+    margin: 2px 0;
+    border: 2px solid white;
+    border-radius: 10px;
+    background: none;
+    font-size: 12px;
+    color: white;
+    cursor: pointer;
+}
+.secRight{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    max-width: 1000px;
+    font-family: 'Poppins', sans-serif;
+}
+.thumbnail img{
+    width: 250px;
+    height: 250px;
+    border: 2px solid black;
+    border-radius: 50%;
+    margin: 5px;
+}
+.paras{
+    padding: 10px 56px;
+}
+.secLeft{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    max-width: 1000px;
+    flex-direction: row-reverse;
+    font-family: 'Poppins', sans-serif;
+    
+}
+.text-center{
+    font-family:'Poppins', sans-serif ;
+    text-align: center;
+}
+.contact{
+    
+    height: 114vh;
+    
+    background-color: #e4e4e4;
+}
+.form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: auto;
+}
+.btn-dark{
+    display: block;
+    border: 2px solid black;
+    color: black;
+    margin: auto;
+    padding: 2px 10px;
+
+}
+.form input{
+    border: 2px solid black;
+    border-radius: 14px;
+    
+    margin: 16px 0;
+    padding: 7px 97px;
+    font-family:'Poppins', sans-serif ;
+    
+}
+.text-footer{
+    color: white;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.line{
+    width: 33px;
+    background-color: white;
+    height: 4px;
+    margin: 5px 3px;
+}
+.burger{
+    position: absolute;
+    cursor: pointer;
+    right: 5%;
+    top: 15px;
+    display: none;
+}
+
+@media only screen and (max-width:1000px){
+    .nav-list{
+
+        
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+    }
+    .navbar{
+        flex-direction: column;
+        height: 277px;
+        transition: all 1.2s ease-out;
+        
+    }
+    .rightNav{
+        flex-direction: column;;
+        
+        text-align: center;
+        margin: auto;
+    }
+    #search{
+        width: 100%;
+    }
+    .form{
+        max-width: 58%;
+    }
+    .burger{
+        display: block;
+    }
+    .h-nav{
+        height: 70px;
+
+    }
+    .secLeft{
+        flex-direction: column-reverse;
+    }
+    .secRight{
+        flex-direction: column-reverse;
+    }
+    .v-class{
+        
+        opacity: 0;
+    }
+    .paras{
+        padding: 0px;
+    }
+}
+@media only screen and (max-width:430px){
+    .form{max-width: 75%;}
+}
